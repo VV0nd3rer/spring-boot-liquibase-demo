@@ -1,5 +1,5 @@
 # spring-boot-liquibase-demo
-## Fill liquibase from existing databse  
+## Fill liquibase changeLog file from existing databse  
 1.1 Generate a changeLog from an existing Database (Reverse engineering) with a Maven Plugin
 ```
   mvn liquibase:generateChangeLog  
