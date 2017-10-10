@@ -1,15 +1,22 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
-    <changeSet author="Mykola.Pylypets (generated)" id="1507641001551-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-        <createSequence sequenceName="information_id_seq"/>
-    </changeSet>
-    <changeSet author="Mykola.Pylypets (generated)" id="1507641001551-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-        <createTable tableName="information">
-            <column autoIncrement="true" name="id" type="SERIAL">
-                <constraints primaryKey="true" primaryKeyName="info_id_pk"/>
-            </column>
-            <column name="title" type="VARCHAR(50)"/>
-        </createTable>
+    <changeSet author="Mykola.Pylypets (generated)" id="1507659952855-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert tableName="information">
+            <column name="id" valueNumeric="1"/>
+            <column name="title" value="security info"/>
+        </insert>
+        <insert tableName="information">
+            <column name="id" valueNumeric="2"/>
+            <column name="title" value="urgent info"/>
+        </insert>
+        <insert tableName="information">
+            <column name="id" valueNumeric="3"/>
+            <column name="title" value="strict confidence!!!"/>
+        </insert>
+        <insert tableName="information">
+            <column name="id" valueNumeric="4"/>
+            <column name="title" value="Joke)))"/>
+        </insert>
     </changeSet>
 </databaseChangeLog>
