@@ -21,7 +21,7 @@ public class InfoController {
     @RequestMapping("/info")
     public ModelAndView showAllInfo() {
         List<Information> infoList = infoService.getAllInfo();
-        ModelAndView mv = new ModelAndView("index");
+        ModelAndView mv = new ModelAndView("info");
         mv.addObject("infoList", infoList);
         return mv;
     }
